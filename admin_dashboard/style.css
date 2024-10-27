@@ -99,22 +99,37 @@ input {
 button {
   padding: 10px 30px;
   background-color: rgb(26, 105, 144);
+  &:hover{
+    cursor: pointer;
+  }
 }
-/*          content grip          */
-.content {
+/*          content grid          */
+.content{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  gap: 20px; /* Space between boxes */
+  grid-template-columns: 1fr auto;
+}
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  grid-template-rows: repeat(3,200px);
+  gap: 20px;
+  /* column-gap: 20px; */
   padding: 20px; /* Padding around the content */
   background-color: antiquewhite;
+  padding-top: 50px;
+  position: relative;
 }
 
 .box {
   display: flex;
   background-color: #ccc; /* Box background color */
   border: 1px solid #000; /* Box border */
-  height: fit-content; /* Default height for small boxes */
+  /* height: fit-content; Default height for small boxes */
+  height: 100%;
+  width: 100%;
+  margin:0;
 }
+
 .box-left {
   background-color: #333;
   width: 8px;
@@ -147,11 +162,82 @@ button {
   width: 16px;
   height: 16px;
 }
-.box.large {
-  grid-row: span 2; /* Make the box span 2 rows */
-  height: 220px; /* Increase height for larger boxes */
+/*         aside              */
+.aside-right{
+  padding-right: 20px;
+  padding-top: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
 }
+.line{
+  height: 1px;
+  width: 200px;
+  background-color: black;
+  margin: 9px 0;
+}
+h4{
+  margin:0;
+}
+.box.large {
+  /* grid-row: span; */
+  height: fit-content; /* Increase height for larger boxes */
+  width: 250px;
+  /* min-width: 300px; */
+  /* margin-bottom: 60px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.anounces > p {
+  max-width: 200px; /* Adjust this value to set the width you want */
+  word-wrap: break-word; /* Ensures long words wrap properly */
+  margin: 0;
+}
+ /* .first .last{
+  position: relative;
+} 
+.text-first{
+  position: absolute;
+  top: 0%;
+}*/
+.text-last{
+  margin-top: 20px;
+} 
+/* .box.one{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.box.two{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} */
+
+/* .box.large.first{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-column-end:auto;
+}
+.box.large.last{
+  grid-column-start: 3;
+  grid-row-start:auto;
+} */
+h2{
+  margin: 0;
+ }
 .main-text{
     margin-top: 0;
     margin-bottom: 0;
+}
+.test{
+  position: absolute;
+  top: 3%;
+  left: 2%;
 }
