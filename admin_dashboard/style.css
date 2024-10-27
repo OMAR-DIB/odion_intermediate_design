@@ -4,100 +4,154 @@
 } */
 body,
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 .container {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    width: 100%;
-    height: 100%;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  height: 100%;
 }
-aside{
-    /* flex: 1; */
-    padding-right: 20px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    height: 100%;
+aside {
+  /* flex: 1; */
+  padding-right: 20px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
 }
-.dashboard{
-    height: 50px;
-    width: 50px;
+.dashboard {
+  height: 50px;
+  width: 50px;
 }
-.aside-icon{
-    height: 30px;
-    width: 30px;
+.aside-icon {
+  height: 30px;
+  width: 30px;
 }
-.icon{
-    margin-left: 15px;
-    
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
+.icon {
+  margin-left: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.dashboard-head{
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.dashboard-head {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.main{
-    /* flex: 5; */
-    height: 100%; /* Full height for the main content */
-    overflow-y: auto;
+.main {
+  /* flex: 5; */
+  height: 100%; /* Full height for the main content */
+  overflow-y: auto;
 }
-.bar{
-    height: fit-content;
+.bar {
+  height: fit-content;
 }
 .upper-bar {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
-    align-items: center;
-    gap: 30px;
-    padding: 10px 40px 20px 40px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 40px 20px 40px;
 }
 
-input{
-    width: 80%;
-    margin-right: 100px;
-    border-radius: 30px;
-    background-color:darkgrey;
+input {
+  width: 80%;
+  margin-right: 100px;
+  border-radius: 30px;
+  background-color: darkgrey;
 }
-.page-img{
-    background-color: rgba(144, 144, 4, 0.299);
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 40px;
+.page-img {
+  background-color: rgba(144, 144, 4, 0.299);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 40px;
 }
-.lower-bar{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 30px;
-    padding: 0px 40px 20px 40px;
+.lower-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 40px 20px 40px;
 }
-.bar-img{
-    background-color: rgba(144, 144, 4, 0.299);
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 40px;
+.bar-img {
+  background-color: rgba(144, 144, 4, 0.299);
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 40px;
 }
-.title{
-    margin: 0;
+.title {
+  margin: 0;
 }
-.bar-buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+.bar-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
-button{
-    padding: 10px 30px;
-    background-color: rgb(26, 105, 144);
+button {
+  padding: 10px 30px;
+  background-color: rgb(26, 105, 144);
+}
+/*          content grip          */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Space between boxes */
+  padding: 20px; /* Padding around the content */
+  background-color: antiquewhite;
+}
+
+.box {
+  display: flex;
+  background-color: #ccc; /* Box background color */
+  border: 1px solid #000; /* Box border */
+  height: fit-content; /* Default height for small boxes */
+}
+.box-left {
+  background-color: #333;
+  width: 8px;
+  height: auto;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.box-right {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr auto;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  padding: 20px;
+}
+.text-content p {
+  margin: 4px 0;
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  /* grid-column-end: 2; */
+}
+
+.logos img {
+  width: 16px;
+  height: 16px;
+}
+.box.large {
+  grid-row: span 2; /* Make the box span 2 rows */
+  height: 220px; /* Increase height for larger boxes */
+}
+.main-text{
+    margin-top: 0;
+    margin-bottom: 0;
 }
