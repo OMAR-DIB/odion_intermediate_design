@@ -1,7 +1,17 @@
-/* @font-face {
-    font-family: "CustomFont";
-    src: url("fonts/Norse-Bold.otf") format("opentype");
-} */
+@font-face {
+  font-family: "MyBoldFont";
+  src: url("fonts/Roboto-Black.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/Roboto-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "MySoftFont";
+  src: url("fonts/Roboto-Light.ttf") format("opentype");
+}
 body,
 html {
   margin: 0;
@@ -17,16 +27,35 @@ html {
 }
 aside {
   /* flex: 1; */
-  padding-right: 20px;
+  padding-right: 25px;
+  padding-left: 10px;
   background-color: aqua;
   display: flex;
   flex-direction: column;
   gap: 40px;
   height: 100%;
 }
+.aside-head{
+  margin-top: 20px;
+}
+.set-font-aside{
+  font-family: 'MyBoldFont',sans-serif,serif;
+  color: white;
+}
+p.set-font-aside{
+  font-weight: 200;
+  font-size: large;
+  
+}
 .dashboard {
   height: 50px;
-  width: 50px;
+  width: 42px;
+  filter: invert(1);
+}
+.aside-icon.white {
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
 }
 .aside-icon {
   height: 30px;
