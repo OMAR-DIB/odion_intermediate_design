@@ -29,7 +29,7 @@ aside {
   /* flex: 1; */
   padding-right: 25px;
   padding-left: 10px;
-  background-color: aqua;
+  background-color: #0284c7;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -98,7 +98,7 @@ input {
   border-color: transparent;
 }
 .page-img {
-  background-color: rgba(144, 144, 4, 0.299);
+  background-color: #fbbf24;
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -112,7 +112,7 @@ input {
   padding: 0px 40px 20px 40px;
 }
 .bar-img {
-  background-color: rgba(144, 144, 4, 0.299);
+  background-color: #fbbf24;
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -129,7 +129,7 @@ input {
 }
 button {
   padding: 10px 30px;
-  background-color: rgb(26, 105, 144);
+  background-color: #0284c7;
   border-radius: 30px;
   border-color: transparent;
   color: white;
@@ -156,7 +156,7 @@ button {
 
 .box {
   display: flex;
-  background-color: #ccc; /* Box background color */
+  background-color: white; /* Box background color */
   border: 1px solid #000; /* Box border */
   /* height: fit-content; Default height for small boxes */
   height: 100%;
@@ -166,15 +166,14 @@ button {
 }
 
 .box-left {
-  background-color: #333;
+  background-color: #fbbf24;
   width: 20px;
-  height: 93%;
-  margin-top: 7px;
-  margin-left: 0px;
+  height: 90%;
+  margin-top: 10px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 20px; 
-  border-top-left-radius: 20px;
+  border-top-left-radius: 29px;
   /* border-radius: 11px; */
 }
 
@@ -287,7 +286,7 @@ h2{
   width: 40px;
   padding: 8px;
   border-radius: 40px;
-  background-color: aqua;
+  
 }
 .last-div{
   display: flex;
@@ -300,4 +299,16 @@ h2{
 }
 .box.large.last{
   gap: 15px;
+}
+.last-img.fourth{
+  background-color: #f472b6;
+}
+.last-img.third{
+  background-color: #9ca3af;
+}
+.last-img.second{
+  background-color: #fbbf24;
+}
+.last-img.first{
+  background-color: #93c5fd;
 }

@@ -327,30 +327,30 @@
             <div class="last">
               <div class="box large last">
                 <div class="last-div">
-                  <img src="images/dog.png" class="last-img" alt="dog" />
+                  <img src="images/dog.png" class="last-img first" alt="dog" />
                   <div class="last-text">
-                    <h5  class="last-text-margin">@tegan</h5>
+                    <h5 class="last-text-margin">@tegan</h5>
                     <p class="last-text-margin">World Peace Builder</p>
                   </div>
                 </div>
                 <div class="last-div">
-                  <img src="images/cat.png" class="last-img" alt="dog" />
+                  <img src="images/cat.png" class="last-img second" alt="dog" />
                   <div class="last-text">
-                    <h5  class="last-text-margin">@tegan</h5>
+                    <h5 class="last-text-margin">@tegan</h5>
                     <p class="last-text-margin">World Peace Builder</p>
                   </div>
                 </div>
                 <div class="last-div">
-                  <img src="images/spider.png" class="last-img" alt="dog" />
+                  <img src="images/spider.png" class="last-img third" alt="dog" />
                   <div class="last-text">
-                    <h5  class="last-text-margin">@tegan</h5>
+                    <h5 class="last-text-margin">@tegan</h5>
                     <p class="last-text-margin">World Peace Builder</p>
                   </div>
                 </div>
                 <div class="last-div">
-                  <img src="images/via_test.jpg" class="last-img" alt="dog" />
+                  <img src="images/via_test.jpg" class="last-img fourth" alt="dog" />
                   <div class="last-text">
-                    <h5  class="last-text-margin">@tegan</h5>
+                    <h5 class="last-text-margin">@tegan</h5>
                     <p class="last-text-margin">World Peace Builder</p>
                   </div>
                 </div>
@@ -360,5 +360,23 @@
         </div>
       </div>
     </div>
+    <script>
+      // they're attached to using the `this` keyword.
+      myObj = {
+          myString: "Hello world!",
+          myFunc: function(){
+              return this.myString;
+          }
+      };
+      // myObj.myFunc(); // = "Hello world!"
+
+      // // Inversely, a function can be assigned to the object and gain access to it
+      // // through `this`, even if it wasn't attached when it was defined.
+      var myOtherFunc = function(){
+          return this.myString.toUpperCase();
+      };
+       myObj.myOtherFunc = myOtherFunc;
+      // myObj.myOtherFunc(); // = "HELLO WORLD!"
+    </script>
   </body>
 </html>
